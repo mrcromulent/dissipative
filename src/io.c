@@ -1272,7 +1272,7 @@ int blockpresent(enum iofields blocknr, int write)
 #else
 #if defined(EOS_DEGENERATE) || defined(EOS_OPAL)
 #ifdef MHD
-      if(RestartFlag == 0 && (blocknr > IO_U && blocknr != IO_EOSXNUC && blocknr != IO_BFLD))
+      if(RestartFlag == 0 && (blocknr > IO_U && blocknr != IO_EOSXNUC && blocknr != IO_BFLD && blocknr != IO_PASS))
 #else
       if(RestartFlag == 0 && (blocknr > IO_U && blocknr != IO_EOSXNUC))
 #endif
