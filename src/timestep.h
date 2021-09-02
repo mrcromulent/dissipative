@@ -18,8 +18,6 @@
 #ifndef TIMESTEP_H
 #define TIMESTEP_H
 
-#include "allvars.h"
-
 #ifdef   ENLARGE_DYNAMIC_RANGE_IN_TIME
 typedef long long integertime;
 #define  TIMEBINS        60
