@@ -2597,6 +2597,7 @@ extern struct global_data_all_processes
 
 #ifdef RELAXOBJECT_BINARY
   double Omega;
+  double MassRatio;
 #endif
 
 #ifdef INSPIRAL
