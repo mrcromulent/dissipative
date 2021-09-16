@@ -539,6 +539,12 @@ void read_parameter_file(char *fname)
       id[nt++] = REAL;
 #endif
 
+#ifdef RELAXOBJECT_BINARY
+      strcpy(tag[nt], "MassRatio");
+      addr[nt] = &All.MassRatio;
+      id[nt++] = REAL;
+#endif
+
 #ifdef BH_NEW_CENTERING
       strcpy(tag[nt], "BlackHoleCenteringMassMultiplier");
       addr[nt] = &All.BlackHoleCenteringMassMultiplier;
