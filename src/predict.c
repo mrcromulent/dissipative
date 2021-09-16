@@ -577,7 +577,7 @@ void drift_particle(int i, integertime time1)
 #ifdef RELAXOBJECT_BINARY
   double vel;
   if(P[i].Pos[0] < 0.5 * All.BoxSize)
-    vel = 1e7 * 0.9 / 1.1;
+    vel = 1e7 * All.MassRatio;
   else
     vel = -1e7;
 
